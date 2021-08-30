@@ -1,0 +1,137 @@
+TLD(top level domain)(.com/.in/.org etc...)
+
+anchor is seperated by #
+it is used to navigation on current page.
+
+domain name system(DNS)
+
+
+static and dynamic
+
+API(application programming interface)
+
+beautify
+html css support
+jupyter
+prettier
+
+
+for inline elements margine(top,bottom),padding won't work
+
+
+------------12-08-2021---------------
+
+alt=""(for broken image)(glt pah dalne pr sirf likha aayega kuch show nhi krega)
+
+<video></video>(add videos)
+
+------------------------13-08-2021---------------
+<a></a>(anchor tag)
+
+
+
+
+--------------15-08-2021--------------
+CSS-()
+3 way to write
+inline
+internal
+external
+
+style= "cssname(color) : cssvalue ; background-color:cssValue "
+
+when we use % it change according to the size of screen.
+
+priority of CSS
+inline>>internal>>external
+
+
+--------------18-08-2021--------------
+
+html is by default  position: static
+
+position: relative->
+an element with position relative is able to shift his position but it doesn't effect other elements.
+(top,bottom,left,right)
+
+position:fixed->(position ko fix kr deta h agr sacroll bhi krege to uspr kuch frk nhi pdega vo vhi  rhega)
+
+
+position: absolute->
+it allow to give explictly position (it works as a child on his parent class )
+
+
+position: sticky->
+(   )
+
+
+
+symantic tag->
+
+<header></header>(site ke top me hota h)
+<section></section>(like as div tag) 
+<footer></footer>(bottom part)
+<main></main>(main body)
+<span></span>
+
+
+*Media Query *
+it is use to make site good  it helps to set size of site according to device(mobile,laptop,tablet, large screen etc...)
+
+
+*for use of Media Query it is important to write this in head tag*
+*meta name="viewport" content="width-device-width, initial-scale=1.0"*
+
+
+.mobile{
+	display:block
+	backgroung-color
+font-size
+}
+@media(min-width:768px){
+.mobile{
+	display:none
+}
+.tablet{
+	display:block
+	backgroung-color:
+font-size
+}
+}
+
+@media(min-width:1024px){
+.mobile{
+	display:none
+}
+.tablet{
+ 	display:none
+}
+.laptop{
+	display:block
+	backgroung-color:
+font-size
+}
+}
+
+--------------Day-8-------------------
+flexBox
+
+4 type of flexbox
+row 
+row-reverse
+column
+column-reverse
+
+flax-wrap: wrap;(make boxes)
+
+
+justfy-content->(content ke sequence ke lie)
+
+gap->(child element ke bich me space dene ke lie )
+
+align-self:(perticular cell ke lie)
+
+pseudo class(change the state)
+
+
+

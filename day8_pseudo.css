@@ -1,0 +1,29 @@
+.btn {
+    background-color: red;
+    color: seashell;
+}
+
+.btn:hover {
+    background-color: purple;
+    color: white;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+}
+
+.btn:focus {
+    background-color: yellow;
+    color: green;
+}
+
+.para::before {
+    /* :: indicate pseudo element */
+    content: "My name is ";
+    color: deeppink;
+}
+
+.para::selection {
+    background-color: gold;
+}

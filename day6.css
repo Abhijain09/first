@@ -1,0 +1,15 @@
+.firstbox {
+    border: black 2px solid;
+}
+
+#second {
+    background-color: cyan;
+}
+
+ol {
+    background-color: rgb(124, 93, 53);
+}
+
+p[name="first-Ptag"] {
+    background-color: pink;
+}

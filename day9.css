@@ -1,0 +1,36 @@
+.btn {
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.btn:focus {
+    height: 10px;
+    width: 50px;
+    background-color: yellow;
+    color: aqua;
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+
+.parent {
+    width: 600px;
+    height: 600px;
+    border: 3px solid red;
+    padding: 10px;
+    position: relative;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.child:focus {
+    background-color: green;
+    border-radius: 50%;
+    transform: translateY(100%);
+    transition: 3s ease-in-out;
+}
