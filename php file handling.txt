@@ -1,0 +1,16 @@
+FILE HANDLING
+-------------
+<?php
+$file_handler= fopen(filename:"naveen.txt",mode:"x"); // mode:x- give error.
+$file_handler= fopen(filename:"naveen.txt",mode:"w");// mode:w- no error.
+$file_handler= fopen(filename:"naveen.txt",mode:"r");// read mode:r-give error.
+$file_handler= fopen(filename:"naveen.txt",mode:"a");// apendant mode:a.
+fwrite($file_handler,data"Hello akash");// in mode:w print hello akash.
+fwrite($file_handler,data"singhal"); in read mode:r+ print singhal kash.
+
+fread:
+-----
+fwrite($file_handler,data"txt");
+echo fread($file_handler,filesize("secg.txt"));
+fclose($file_handler);
+echo fread($file_handler,filesize(section.txt));

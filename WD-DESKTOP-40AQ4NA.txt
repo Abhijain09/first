@@ -132,6 +132,87 @@ gap->(child element ke bich me space dene ke lie )
 align-self:(perticular cell ke lie)
 
 pseudo class(change the state)
+pseudo element
+
+
+-----------------------day-9----------------------
+
+transform-(axis change)
+transition-(change krta h  shape,time,delay,look,color )
+
+-----------------------Day-10----------------
+
+		Git
+
+git config --global user.name "username"
+
+git config --global user.name(check krne ke lie)
+
+git config --global user.email "useremail"
+
+git config --global user.email(check krne ke lie)
+
+phle us folder me jayege jha se upload krni h file.
+
+get init
+get status
+git add .
+git commit -m "first commit"(comment show ke lie)
+git branch -M main
+git remote add origin https://github.com/Abhijain09/second.git(git pr set krne ke lie hr kisi ke lie alg hota h)
+git push -u origin main
 
 
 
+*for second time*
+git add .
+git commit -m "first commit"(comment show ke lie)
+git push origin main
+
+del for delete(windows)/rm -rf (linux)
+
+		*for clone*
+
+git clone  https://github.com/Abhijain09/first.git
+
+clone update ke lie
+git pull origin main
+
+
+--------------------------Day-11----------------------
+
+BEM -> block elements modifiers
+
+
+
+
+
+
+		JAVA-SCRIPT
+============================DAY-14===================================
+console.log("")->print krane ke lie
+console.error("")->error format me print krane ke lie.
+console.warn("")->warning print krane ke lie.
+
+PRIMITIVE datatype->they can not be modified, they do not provide any method.
+*null
+*string
+*number
+*big int
+*boolean
+*undefined
+*symbol
+
+
+
+*number->in JS all degits include in number ,
+	its range is -(25^3 -1) to (25^3 -1)or -(15624) to (15624).
+
+BigInt-> we use big int when number cross its range.we have to add *n* in last  to make number BigInt.
+
+
+
+Non-PRIMITIVE datatype->
+Array
+object
+ 
