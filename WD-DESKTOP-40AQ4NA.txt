@@ -216,3 +216,114 @@ Non-PRIMITIVE datatype->
 Array
 object
  
+
+================================================DAY-16==================================================
+
+
+var color = ["r", 1, 2, "b", "B", "R", "qgubewigb"];
+color.push("a"); ->add in last
+color.unshift("f"); ->add in first
+color.pop(); -> deleted last value
+color.shift(); -> delete first value
+console.log(color.join("-")); ->it joins array value by given sign.
+console.log(color.indexOf("R")); ->show tha index of given value 0 se start hota h
+console.log(color.sort()); ->sort the data of array  numbers,capital latters,small latters
+console.log(color.reverse()); -> sort in desending order
+var newcolor = color.slice(1, 3); -> slice the array from index 1 to index 3-1 .becasue array start from 0 index.
+
+
+
+var age = [1, 2, 3, 4, 5, 6];
+var f = age.find(myFunc); //func without argument
+
+function myFunc(value, index, array) {
+    //return value > 2; //return next greater value from 2
+    return index > 3; //return next index;
+}
+console.log(f);
+
+age.forEach(function(e) {
+    console.log(e + 5); //work on all value of age array
+});
+
+for (var e of age) {
+    console.log(e); // same as age.forEach
+}
+
+
+
+
+var obj = { 65: "A", 66: "B", 67: "C" };
+console.log(obj);
+console.log(Object.keys(obj)); ->print keys
+console.log(Object.values(obj)); ->print values of keys
+console.log(Object.entries(obj)); ->show data array of array
+console.log(obj.hasOwnProperty(65)); -> show the given key is present or not.
+console.log(obj.hasOwnProperty("pr2")); -> give boolean values.
+obj.foo = "bar1"; -> create a new key if there are no such key by given name.
+console.log(obj.foo);
+console.log(obj);
+
+
+
+var obje = { name: "js" };
+var freezeObj = Object.freeze(obje); -> if we freeze any obj then we are not able to change anything in it
+console.log(freezeObj);
+console.log(Object.isFrozen(obje)); -> check obj is freeze or not
+
+
+
+function say(mes = 2)  ->if we dont give any perameter it take tha given value  and if we give perameter ,it will take it.
+{
+    console.log(mes);
+}
+say(4);
+
+
+
+======================================DAY-17============================================================
+
+ES6 JAVA SCRIPT
+in this js intruduce Let 
+it is similar as var 
+but it is a block scope and Var has h global Scope 
+ 
+
+*Spread operator*->it has 3 dots(...) it allow to spreadout element of an obj such as array obj
+
+ex->
+const array1 = [1, 2, 3, 4, 5, 6];
+const array2 = [...array1, 9, 10];-> spread array1 in staring of array2  
+console.log(array2)
+
+output-> 1,2,3,4,5,6,9,10
+
+Template Literal (``)->in this we are able to write multiple line without usnig \n.
+
+
+let simpleString = "this   is a simple string";
+let templit = `this    is
+tamplate literal`; -> this is tamplate variable 
+console.log("noramlString =" + simpleString);
+console.log("template" + templit + "literal=");
+console.log(`template ${templit} litearl=`);-> this is tamplate syntex
+
+----------------------------DAY-18-------------------------
+DOM Mainpulation->it is randring the data 
+
+document.getElementbyId("")
+document.querySelector("")
+document.querySelector("").innerHTML="Hello word"
+
+
+----------------------------DAY-19-----------------------
+ES6 
+Destructuring is use to get the index or an element of array into indivitual variables.
+
+const arr = [11, 12, 13, 14, 15];
+
+const [one, two, three, four] = arr;
+
+if variable is more than array value then it have undefin value.
+
+
