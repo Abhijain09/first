@@ -284,7 +284,7 @@ say(4);
 ======================================DAY-17============================================================
 
 ES6 JAVA SCRIPT
-in this js intruduce Let 
+in this js intro  duce Let 
 it is similar as var 
 but it is a block scope and Var has h global Scope 
  
@@ -304,8 +304,7 @@ Template Literal (``)->in this we are able to write multiple line without usnig 
 let simpleString = "this   is a simple string";
 let templit = `this    is
 tamplate literal`; -> this is tamplate variable 
-console.log("noramlString =" + simpleString);
-console.log("template" + templit + "literal=");
+console.log("noramlString =" + simpleString);console.log("template" + templit + "literal=");
 console.log(`template ${templit} litearl=`);-> this is tamplate syntex
 
 ----------------------------DAY-18-------------------------
@@ -314,6 +313,15 @@ DOM Mainpulation->it is randring the data
 document.getElementbyId("")
 document.querySelector("")
 document.querySelector("").innerHTML="Hello word"
+
+to create new element in DOM using JS
+
+avi=document.createElement("div");
+avi.classList.add("mystyle");====> multiple classes de skte hai aese
+document.getElementById("b").appendChild(avi);====> ni=ormally append krne ke liye
+console.log(avi);
+
+note==> script src wali line body m sbse neeche likhni hai nhi to work nhi krega
 
 
 ----------------------------DAY-19-----------------------
@@ -326,4 +334,133 @@ const [one, two, three, four] = arr;
 
 if variable is more than array value then it have undefin value.
 
+
+const obj = {
+    name: "Abhinandan Jain",
+    email: "abhijain092000@gmail.com",
+    age: 21
+}
+
+
+let { name, email, age, dum } = obj;
+//if we change variable order it doesn't change value it work smarter
+//let { name, age, email, dum } = obj;
+//we have to give same name as creating object elements.
+
+
+		*ES6 arrow function*
+
+in arrow function we don't have need to use return function.
+
+Ex-> let add=(x,y)=> x+y;
+console.log(add(10,20));
+
+we don't need to use '{' or return statement in one or single expression.
+
+we have two or more expression we have to use return '{'
+
+let add=(x,y)=>{
+	console.log(x);
+	return(x+y);
+}
+
+
+Arrow doesn't have its own "this" value and the argument object but function has. therefore arrow function cannot be used as an object handler.
+
+const counter = {
+    count: 0,
+    next: function() {
+        return ++(this.count);
+    }
+}
+console.log(counter.next());
+
+output=>1
+
+*NOTE-> 'this' keyword we have to use in function else it will point to browser*
+
+			*Map*
+
+map()=> it works same as foreach but it return new array after itration.
+
+we use 3 perameter in map function
+1.vlaue
+2.index
+3. 2d array of orignal size. but at each index we will get whole orignal array.
+
+
+1.Value
+const arr1 = [10, 20, 30];
+const newArr = arr1.map((e) => e + 1);
+console.log(newArr);
+
+output=>*[11,21,31]*
+
+		2.index
+const newArr1 = arr1.map((e, i) => i);
+console.log(newArr1);
+
+
+		3.2Darray
+const newArr2 = arr1.map((e, i, b) => b);
+console.log(newArr2);
+
+
+		*filter()*
+
+it works same as map but it create a new array of  require value but map gives us all value of orignal array.
+
+
+let filterArr = [1, 2, 3, 4];
+const newFilterArr = filterArr.filter((value) => {
+    if (value % 2 == 0) {
+        return value;
+    }
+});
+console.log(newFilterArr);
+
+let mapArr = [1, 2, 3, 4];
+const newMapArr = mapArr.map((value) => {
+    if (value % 2 == 0) {
+        return value;
+    }
+});
+console.log(newMapArr);
+
+
+			*Promise*
+
+Promise is a oject that return value that we hope to recive in the future  not imidately. because promise handle assyncronise operations.
+
+it start with pending and end with either resolve or rejected.
+
+
+Generally Promise object is created using setTime() which make operation to go sleep i.e they will be in pending state. After given timeout we can see its state.
+
+timeOut hone se phle open kr lete h to vo data undefine ho jata h.
+
+ex->
+let concert = true;
+let attendConcert = new Promise(function(fulfill, reject) {
+    setTimeout(() => {
+        if (concert) { fulfill("Naveen ATTENDED THE CONCERT"); } else {
+            reject("Failed to attend the concert");
+        }
+    }, 200);
+});
+
+
+we use two function then() and catch() to handle or perform task on Promise object.
+
+API can give anything that could be fulfilled state or rejected state. so to work on that we use both then() and catch() function.
+
+ex->
+
+attendConcert.then((data)=>console.log(data));
+attendConcert.catch((error)=>console.log(error));
+
+
+if we get rejected state and we have both function in two different lines still we will get error because of then() function but if will get resolved due to catch() function.so we have to use both function in same line
+
+attendConcert.then((data)=>console.log(data)).catch((error)=>console.log(error));
 
