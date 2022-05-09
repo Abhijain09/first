@@ -464,3 +464,33 @@ if we get rejected state and we have both function in two different lines still 
 
 attendConcert.then((data)=>console.log(data)).catch((error)=>console.log(error));
 
+
+
+		*asyc and await*
+it is upadeted version of  then and catch.
+
+
+async function afunc() {
+    let result = await attendConcert;
+    console.log(result)
+    return result;
+}
+afunc() 
+
+it wasn't any error, to catch error we have to use try and catch block.
+
+
+async function func() {
+    try {
+        let result = await attendConcert;
+        console.log(result)
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+func(); 
+
+--------------------------------------------------
+
+Bootstrap allow us to build application without CSS.

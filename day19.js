@@ -104,8 +104,18 @@ console.log(newMapArr);
 
 
 //          promise
+// let concert = false;
+// let attendConcert = new Promise(function(fulfill, reject) {
+//     setTimeout(() => {
+//         if (concert) { fulfill("Naveen ATTENDED THE CONCERT"); } else {
+//             reject("Failed to attend the concert");
+//         }
+//     }, 200);
+// });
+// console.log(attendConcert);
+
 let concert = false;
-let attendConcert = new Promise(function(fulfill, reject) {
+let attendConcert = new Promise((fulfill, reject) => {
     setTimeout(() => {
         if (concert) { fulfill("Naveen ATTENDED THE CONCERT"); } else {
             reject("Failed to attend the concert");
@@ -114,7 +124,33 @@ let attendConcert = new Promise(function(fulfill, reject) {
 });
 console.log(attendConcert);
 
+
 // attendConcert.then((data) => console.log(data));
 // attendConcert.catch((error) => console.log(error));
 
 attendConcert.then((data) => console.log(data)).catch((error) => console.log(error));
+
+
+async function afunc() {
+    let result = await attendConcert;
+    console.log(result)
+    return result;
+}
+afunc()
+
+// const afunc = async() => {
+//     let result = await attendConcert();
+//     console.log(result)
+//     return result;
+// }
+
+async function func() {
+    try {
+        let result = await attendConcert;
+        console.log(result)
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+func();
