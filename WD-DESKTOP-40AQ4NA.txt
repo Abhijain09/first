@@ -494,3 +494,40 @@ func();
 --------------------------------------------------
 
 Bootstrap allow us to build application without CSS.
+we go on bootstrap site and check whatever we want to display and its code.
+
+
+
+
+----------------------Day-26---------------------
+
+
+--------------------*NODE JS*--------------------
+
+Node.js is an open-source and cross-platform javaScript runtime environment.
+
+-> runtime provide required library for the execution.
+
+->provide access to the global object.
+
+->provide access to hardware resources.
+
+
+varible decalre in globele will be local to the respective modules.
+
+
+single-threaded and one core
+non-blocking I/O
+
+
+there are 4 object available in every module
+
+1.) __dirname => show the path of excuting file
+
+2.) __filename =>show the path of excuting file with file name.
+
+3.) .export => it use to export modules to other modueles
+
+4.) require => it use to import modules to other modueles
+
+
